@@ -1,7 +1,7 @@
 /*define global variables*/
 //get functions and constants from snake.js file, tidier code
 import {update as updateSnake, draw as drawSnake, SNAKE_SPEED,
-     getSnakeHead, snakeIntersection} from './snake.js'
+     getSnakeHead, snakeIntersection, getScore} from './snake.js'
 import {update as updateFood, draw as drawFood} from './food.js'
 import { outsideGrid } from './grid.js'
 
@@ -13,7 +13,9 @@ const gameBoard = document.getElementById('game-board')
 /* start game loop*/
 function main(currentTime){
     if (gameOver){
-        if (confirm('You lost. Press ok to restart')){
+        let score = getScore()
+        let outString = ('You lost. Press ok to restart. Your score was ' + score +' points')
+        if (confirm(outString)){
             window.location = '/'
         }
     return

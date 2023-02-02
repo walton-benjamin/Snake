@@ -2,6 +2,7 @@ import { getInputDirection } from "./controller.js"
 //number of tiles moved per second
 export const SNAKE_SPEED = 8
 let newSegments = 0
+let score = 0
 const snakeBody = [
     {x:10, y:11}
 ]
@@ -36,6 +37,7 @@ export function draw(gameBoard){
 
 export function expandSnake(amount){
     newSegments += amount
+    score += amount
 }
 
 function addSegments(){
@@ -64,4 +66,7 @@ export function getSnakeHead(){
 
 export function snakeIntersection(){
     return onSnake(snakeBody[0], {ignoreHead:true})
+}
+export function getScore(){
+    return score
 }
