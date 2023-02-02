@@ -1,0 +1,29 @@
+body{
+    height: 100vh;   
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+#game-board{
+    background-color: whitesmoke;
+    width: 100vmin; /*whichever is the narrowest, */
+    height: 100vmin; /* will always have the biggest possible square on screen*/
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    /*21 rows of equal size*/
+    grid-template-columns: repeat(21, 1fr);
+
+}
+.snake{
+    background-color: greenyellow;
+    border: .25vmin solid black;
+}
+
+.food{
+    background-color: yellow;
+    border: .25vmin solid black;
+}
