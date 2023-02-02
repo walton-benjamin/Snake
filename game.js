@@ -3,7 +3,7 @@
 import {update as updateSnake, draw as drawSnake, SNAKE_SPEED,
      getSnakeHead, snakeIntersection, getScore} from './snake.js'
 import {update as updateFood, draw as drawFood} from './food.js'
-import { outsideGrid, getGridSize } from './grid.js'
+import { outsideGrid } from './grid.js'
 
 //initializing variables
 let lastRenderTime = 0
@@ -38,8 +38,6 @@ function main(currentTime){
     //will draw the outputs of update
     draw()
 }
-
-document.documentElement.style.setProperty('--Grid-Size', getGridSize())
 
 window.requestAnimationFrame(main)
 

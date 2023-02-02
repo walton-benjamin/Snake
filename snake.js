@@ -4,7 +4,7 @@ export const SNAKE_SPEED = 8
 let newSegments = 0
 let score = 0
 const snakeBody = [
-    {x:10, y:11}
+    {x:15, y:15}
 ]
 
 export function update(){

@@ -21,3 +21,6 @@ export function outsideGrid(position){
 export function getGridSize(){
     return GRID_SIZE
 }
+
+console.log(GRID_SIZE)
+document.documentElement.style.setProperty('--gridsize', GRID_SIZE)
