@@ -1,6 +1,8 @@
 const GRID_SIZE = 15
 //also need to edit grid size in style.css
 
+
+/* render game-board-temp (game-board, GRID-SIZE*/
 export function randomGridPosition(){
     return{
         x: Math.floor(Math.random()*GRID_SIZE)+ 1,
@@ -14,4 +16,8 @@ export function outsideGrid(position){
         position.x < 1 || position.y < 1 
         || position.x > GRID_SIZE || position.y > GRID_SIZE
     )
+}
+
+export function getGridSize(){
+    return GRID_SIZE
 }
