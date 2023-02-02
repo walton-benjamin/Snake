@@ -1,5 +1,5 @@
-const GRID_SIZE = 21
-
+const GRID_SIZE = 15
+//also need to edit grid size in style.css
 
 export function randomGridPosition(){
     return{
@@ -7,7 +7,6 @@ export function randomGridPosition(){
         y: Math.floor(Math.random()*GRID_SIZE)+ 1
     }
 }
-
 
 export function outsideGrid(position){
     //see if position passed is outside the grid

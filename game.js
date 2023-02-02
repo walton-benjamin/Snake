@@ -27,7 +27,6 @@ function main(currentTime){
     //if it's not time for the snake to move yet, do nothing
     if(secondsSinceLastRender < 1 / SNAKE_SPEED) return
 
-    
     lastRenderTime = currentTime
     console.log('Render')
 
@@ -40,8 +39,6 @@ function main(currentTime){
 
 window.requestAnimationFrame(main)
 
-
-
 function update(){
     //will control game logic when snake moves
     updateSnake()
@@ -49,14 +46,12 @@ function update(){
     checkForDeath()
 }
 
-
 function draw(){
     //will draw the outputs of snake movements
     gameBoard.innerHTML = ''
     drawSnake(gameBoard)
     drawFood(gameBoard)
 }
-
 
 function checkForDeath(){
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
