@@ -30,7 +30,7 @@ function main(currentTime){
     if(secondsSinceLastRender < 1 / SNAKE_SPEED) return
 
     lastRenderTime = currentTime
-    console.log('Render')
+    //console.log('Render')
 
     //will control game logic
     update()
