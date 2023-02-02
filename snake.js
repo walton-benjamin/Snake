@@ -24,7 +24,12 @@ export function draw(gameBoard){
         const snakeElement = document.createElement('div')
         snakeElement.style.gridRowStart = segment.y
         snakeElement.style.gridColumnStart = segment.x
-        snakeElement.classList.add('snake')
+        if (segment.x == snakeBody[0].x && segment.y == snakeBody[0].y){
+            snakeElement.classList.add('snakehead')
+        }else {
+            snakeElement.classList.add('snake')
+        }
+        
         gameBoard.appendChild(snakeElement)
     })
 }

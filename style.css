@@ -25,6 +25,11 @@ body{
     background-color: greenyellow;
     border: .25vmin solid black;
 }
+.snakehead{
+    background-color: rgb(139, 201, 45);
+    border: .25vmin solid black;
+}
+
 
 .food{
     background-color: yellow;
