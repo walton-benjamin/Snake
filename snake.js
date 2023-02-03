@@ -1,7 +1,8 @@
 import { getInputDirection } from "./controller.js"
-import { getExpansionRate } from "./food.js"
+//import { getExpansionRate } from "./food.js"
 //number of tiles moved per second
-export const SNAKE_SPEED = 12
+export const SNAKE_SPEED = 8
+ const EXPANSION_RATE = 7
 let newSegments = 0
 let score = 0
 const snakeBody = [
@@ -39,7 +40,7 @@ export function draw(gameBoard){
 export function expandSnake(amount){
     newSegments += amount
     score += amount
-    score += getExpansionRate()
+    score += 12
 }
 
 function addSegments(){
@@ -71,4 +72,8 @@ export function snakeIntersection(){
 }
 export function getScore(){
     return score
+}
+
+export function getExpansionRate(){
+    return EXPANSION_RATE
 }
