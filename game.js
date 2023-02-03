@@ -16,10 +16,10 @@ function main(currentTime){
         let score = getScore()
         let outString = ('You lost. Press ok to restart. Press Cancel to return to the Menu. Your score was ' + score +' points')
         if (confirm(outString)){
-            window.location.href = 'index.html';
+            window.location.href = 'gameFile.html';
             return
         }
-        window.location.href = 'StartMenu.html';
+        window.location.href = 'index.html';
         return
     }
 
