@@ -1,4 +1,4 @@
-const GRID_SIZE = 15
+const GRID_SIZE = 25
 //also need to edit grid size in style.css
 
 

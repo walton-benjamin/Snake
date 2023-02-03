@@ -16,9 +16,9 @@ body{
     width: 100vmin; /*whichever is the narrowest, */
     height: 100vmin; /* will always have the biggest possible square on screen*/
     display: grid;
-    grid-template-rows:var(--gridsize);
+    grid-template-rows:repeat(var(--gridsize), 1fr);
     /*21 rows of equal size*/
-    grid-template-columns: var(--gridsize);/*repeat(var(--grid-size), 1fr);*/
+    grid-template-columns: repeat(var(--gridsize), 1fr);/*repeat(var(--grid-size), 1fr);*/
 }
 
 .snake{
