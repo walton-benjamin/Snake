@@ -14,11 +14,12 @@ const gameBoard = document.getElementById('game-board')
 function main(currentTime){
     if (gameOver){
         let score = getScore()
-        let outString = ('You lost. Press ok to restart. Your score was ' + score +' points')
+        let outString = ('You lost. Press ok to restart. Press Cancel to return to the Menu. Your score was ' + score +' points')
         if (confirm(outString)){
             window.location = '/'
         }
-    return
+        window.location.href = 'StartMenu.html';
+        return
     }
 
     window.requestAnimationFrame(main)
