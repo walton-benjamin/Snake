@@ -20,6 +20,22 @@ window.addEventListener('keydown', e =>{
             if (lastSnakeDirection.x !== 0) break
             snakeDirection = {x:1, y:0}
             break
+        case 'w':
+            if (lastSnakeDirection.y !== 0) break
+            snakeDirection = {x:0, y:-1}
+            break
+        case 's':
+            if (lastSnakeDirection.y !== 0) break
+            snakeDirection = {x:0, y:1}
+            break
+        case 'a':
+            if (lastSnakeDirection.x !== 0) break
+            snakeDirection = {x:-1, y:0}
+            break
+        case 'd':
+            if (lastSnakeDirection.x !== 0) break
+            snakeDirection = {x:1, y:0}
+            break
     }
 })
 
