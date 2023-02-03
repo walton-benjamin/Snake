@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="menuStyleSheet" href="MenuStyling.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <head>
+        <link rel="menuStyleSheet" href="MenuStyling.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
     <header>
         <h1>Snake</h1>
     </header>
 
     <body>
+        <div id="media">
         <img src="./media/bopping-snake.gif" width="30%" citation="https://www.deviantart.com/drawingismytherapy/art/Bopping-snake-gif-Test-Animation-838593166">
         <img src="./media/snake-gentleman.gif" width="25%" citation="https://tenor.com/view/outdare-snake-snake-snake-outdare-outdare-snaaaaaake-gif-21454119">
         <img src="./media/bandanna-snake.gif" width="21%" citation="https://tenor.com/en-GB/view/snake-cute-snake-cute-animated-snake-blep-blep-snake-gif-25442535">
+        </div>
 
+        <div id="textArea">
         <p>Welcome to Snake! The classic game, updated using only HTML, CSS & JavaScript.</p>
         <p>Controls : </p>
         <ul>
@@ -36,13 +40,16 @@
         
 
         <p>At the end of the game, Press "Ok" to restart the game, and "Cancel" to return to this Menu</p>
+        </div>
+        <div id="button">
         <button onclick="startGame();">Start Game</button>
+    </div>
     </body>
 
-<script>
-    function startGame(){
-        window.location.href = 'gameFile.html';
-    }
-</script>
+    <script>
+        function startGame(){
+            window.location.href = 'gameFile.html';
+        }
+    </script>
 
 </html>
